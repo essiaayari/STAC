@@ -34,6 +34,8 @@ export class ContactComponent implements OnInit {
     console.log(this.frm.value);
     this.commentService.addcomments(this.frm.value as Commentaires).subscribe
     ( data => console.log(data))
+    alert("Merci pour votre feed back!");
+    this.frm.reset();
   }
 
 
